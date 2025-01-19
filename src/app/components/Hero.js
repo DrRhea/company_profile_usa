@@ -2,7 +2,7 @@
 
 const Hero = () => {
   return (
-    <div className="relative isolate overflow-hidden lg:min-h-screen flex items-center" id={'home'}>
+    <div className="relative isolate overflow-hidden min-h-screen flex items-center" id={'home'}>
         <img src="images/image.png" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
           <div
@@ -12,12 +12,12 @@ const Hero = () => {
             }}
           ></div>
         </div>
-        <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-2xl">
           <div className="text-center bg-gray-900/80 px-6 py-12 rounded-lg">
-            <h1 className="text-lg font-bold tracking-tight text-white">
-            Consultancy Services
+            <h1 className="text-3xl sm:text-6xl font-bold tracking-tight text-white">
+              Consultancy Services
             </h1>
-            <p className="mt-6 text-6xl font-bold text-gray-300">We turn insights into impact.</p>
+            <p className="mt-6 text-base sm:text-xl font-bold text-gray-300">We turn insights into impact.</p>
           </div>
         </div>
         <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">

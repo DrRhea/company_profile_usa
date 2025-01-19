@@ -31,7 +31,7 @@ const Accordion = () => {
 
   return (
     <div className="bg-gray-900" id="faqs"> {/* Tambahkan ID di sini */}
-      <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
+      <div className="mx-auto max-w-7xl px-6 py-12 sm:py-14 lg:px-8 lg:py-16">
         <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-12">
           <div>
             <h2 className="text-4xl lg:text-6xl font-medium leading-10 tracking-tight text-white">
