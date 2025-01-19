@@ -32,9 +32,9 @@ const Accordion = () => {
   return (
     <div className="bg-gray-900" id="faqs"> {/* Tambahkan ID di sini */}
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12">
+        <div className="grid grid-cols-1 lg:grid-cols-3 lg:gap-x-12">
           <div>
-            <h2 className="text-6xl font-bold leading-10 tracking-tight text-white">
+            <h2 className="text-4xl lg:text-6xl font-medium leading-10 tracking-tight text-white">
               FAQs
             </h2>
           </div>
@@ -50,7 +50,7 @@ const Accordion = () => {
                       aria-expanded={openFAQ === index}
                       onClick={() => toggleFAQ(index)}
                     >
-                      <span className="text-base font-semibold leading-7">
+                      <span className="text-base tracking-wider leading-7 font-['arial']">
                         {faq.question}
                       </span>
                       <span className="ml-6 flex h-7 items-center">
@@ -88,7 +88,7 @@ const Accordion = () => {
                     className="overflow-hidden"
                   >
                     <dd className="mt-2 pr-12">
-                      <p className="text-base leading-7 text-gray-300">{faq.answer}</p>
+                      <p className="text-base leading-7 text-gray-300 font-['arial']">{faq.answer}</p>
                     </dd>
                   </motion.div>
                 </div>

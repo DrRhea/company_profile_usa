@@ -35,9 +35,9 @@ const Contact = () => {
                 />
               </svg>
             </div>
-            <h2 className="mb-6 text-base uppercase tracking-tight text-gray-900">Get in touch</h2>
-            <h2 className="text-6xl font-bold tracking-tight text-gray-900">Your visions, our solutions</h2>
-            <p className="mt-2 text-lg leading-8 text-gray-600">
+            <h2 className="mb-6 text-sm uppercase tracking-widest font-['arial'] text-gray-600">Get in touch</h2>
+            <h2 className="text-6xl font-medium tracking-tight text-gray-900">Your visions, our solutions</h2>
+            <p className="mt-2 text-lg leading-8 tracking-wider text-gray-700  font-['arial']">
               Schedule your consultation and find out how we can help you.
             </p>
           </div>
@@ -48,9 +48,9 @@ const Contact = () => {
               <div className='lg:col-span-2'>
                 <label
                   htmlFor="name"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
+                  className="block text-sm font-semibold leading-6 text-gray-900 font-['arial']"
                 >
-                  Name <span className='text-gray-400'>(required)</span>
+                  Name <span className='text-gray-400 font-normal font-["arial"] text-xs'>(required)</span>
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -65,9 +65,9 @@ const Contact = () => {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="email"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
+                  className="block text-sm font-semibold leading-6 text-gray-900  font-['arial']"
                 >
-                  Email <span className='text-gray-400'>(required)</span>
+                  Email <span className='text-gray-400 font-normal font-["arial"] text-xs'>(required)</span>
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -82,9 +82,9 @@ const Contact = () => {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="phone-number"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
+                  className="block text-sm font-semibold leading-6 text-gray-900  font-['arial']"
                 >
-                  Phone number <span className='text-gray-400'>(required)</span>
+                  Phone number <span className='text-gray-400 font-normal font-["arial"] text-xs'>(required)</span>
                 </label>
                 <div className="mt-2.5">
                   <input
@@ -99,7 +99,7 @@ const Contact = () => {
               <div className="sm:col-span-2">
                 <label
                   htmlFor="message"
-                  className="block text-sm font-semibold leading-6 text-gray-900"
+                  className="block text-sm font-semibold leading-6 text-gray-900  font-['arial']"
                 >
                   Message
                 </label>

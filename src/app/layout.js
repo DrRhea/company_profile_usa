@@ -10,7 +10,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* Primary Meta Tags */}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="title" content="AAHM Corporation – Leading Consultancy Services for Modern Businesses" />
@@ -36,7 +35,7 @@ export default function RootLayout({ children }) {
           property="og:description"
           content="AAHM Corporation provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success."
         />
-        <meta property="og:image" content="/image/logo.png" />
+        <meta property="og:image" content="/images/logo.png" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
@@ -49,11 +48,11 @@ export default function RootLayout({ children }) {
           name="twitter:description"
           content="AAHM Corporation provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success."
         />
-        <meta name="twitter:image" content="/image/logo.png" />
+        <meta name="twitter:image" content="/images/logo.png" />
 
         {/* Favicon */}
-        <link rel="icon" href="/image/logo.png" type="image/png" />
-        <link rel="apple-touch-icon" href="/image/logo.png" />
+        <link rel="icon" href="/images/logo.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
       </head>
       <body>
         <main>{children}</main>
