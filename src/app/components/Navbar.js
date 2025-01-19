@@ -173,7 +173,7 @@ export default function Navbar() {
                       to="services"
                       smooth={true}
                       duration={500}
-                      offset={calculateOffset(-100)}
+                      offset={calculateOffset(-90)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
