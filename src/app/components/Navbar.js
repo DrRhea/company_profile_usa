@@ -36,16 +36,15 @@ export default function Navbar() {
     >
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
+          <Link
+            to="home"
+            smooth={true}
+            duration={500}
+            className="-m-1.5 p-1.5 flex items-center gap-x-3">
             <span className="sr-only">Your Company</span>
-            <Image
-              className="h-8 w-auto"
-              src="/placeholder-logo.png"
-              width={32}
-              height={32}
-              alt="Company Logo"
-            />
-          </a>
+            <img src='/images/logo.png' className='h-12 w-auto' />
+            <span className='text-lg'>AAHM Corporation</span>
+          </Link>
         </div>
         <div className="flex lg:flex-1 lg:justify-end space-x-4 relative z-20"> {/* Set higher z-index here */}
           <Link 
