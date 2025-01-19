@@ -31,7 +31,7 @@ export default function Navbar() {
   return (
     <header
       className={`${
-        isFixed ? 'fixed top-0 left-0 w-full bg-gray-900/20 shadow-lg' : 'absolute inset-x-0 top-0'
+        isFixed ? 'fixed top-0 left-0 w-full' : 'absolute inset-x-0 top-0'
       } z-50 transition-all`}
     >
       <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
@@ -47,10 +47,14 @@ export default function Navbar() {
             />
           </a>
         </div>
-        <div className="flex lg:flex-1 lg:justify-end space-x-4">
-          <a href="#" className="font-semibold leading-6 text-white bg-gray-900 px-6 py-3">
+        <div className="flex lg:flex-1 lg:justify-end space-x-4 relative z-20"> {/* Set higher z-index here */}
+          <Link 
+            to="contact"
+            smooth={true}
+            duration={500}
+            className="font-semibold leading-6 text-white bg-gray-900 px-6 py-3 relative z-20 cursor-pointer">
             Work With Us
-          </a>
+          </Link>
           <div className="flex">
             <button
               type="button"
@@ -58,7 +62,7 @@ export default function Navbar() {
               onClick={() => setMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <svg className="h-6 w-6 text-gray-900" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
+              <svg className={` ${isFixed ? 'text-white' : 'text-gray-900'} h-6 w-6`} fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
               </svg>
             </button>
@@ -119,7 +123,7 @@ export default function Navbar() {
                     to="home" // Ganti dengan ID yang sesuai
                     smooth={true}
                     duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                     onClick={() => setMenuOpen(false)}
                   >
                     Home
@@ -128,7 +132,7 @@ export default function Navbar() {
                     to="about-us"
                     smooth={true}
                     duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                     onClick={() => setMenuOpen(false)}
                   >
                     About Us
@@ -137,7 +141,7 @@ export default function Navbar() {
                     to="process"
                     smooth={true}
                     duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                     onClick={() => setMenuOpen(false)}
                   >
                     Process
@@ -146,7 +150,7 @@ export default function Navbar() {
                     to="faqs"
                     smooth={true}
                     duration={500}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                     onClick={() => setMenuOpen(false)}
                   >
                     FAQs
