@@ -34,8 +34,8 @@ const Accordion = () => {
       <div className="mx-auto max-w-7xl px-6 py-24 sm:py-32 lg:px-8 lg:py-40">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-x-12">
           <div>
-            <h2 className="text-2xl font-bold leading-10 tracking-tight text-white">
-              Frequently asked questions
+            <h2 className="text-6xl font-bold leading-10 tracking-tight text-white">
+              FAQs
             </h2>
           </div>
           <div className='col-span-2'>

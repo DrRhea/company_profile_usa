@@ -3,7 +3,7 @@
 const Hero = () => {
   return (
     <div className="relative isolate overflow-hidden pt-14" id={'home'}>
-        <img src="https://static.wixstatic.com/media/48ecef_ed2750076329488db22dc653ec9efca8~mv2.jpg/v1/fill/w_980,h_551,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/Untitled%20design-6.jpg" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+        <img src="images/hero.png" alt="" className="absolute inset-0 -z-10 h-full w-full object-cover" />
         <div className="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
           <div
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-20 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
