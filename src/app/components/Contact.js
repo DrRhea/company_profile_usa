@@ -35,7 +35,7 @@ const Contact = () => {
                 />
               </svg>
             </div>
-            <h2 className="mb-6 text-base tracking-tight text-gray-900 uppercase">Get in touch</h2>
+            <h2 className="mb-6 text-base uppercase tracking-tight text-gray-900">Get in touch</h2>
             <h2 className="text-6xl font-bold tracking-tight text-gray-900">Your visions, our solutions</h2>
             <p className="mt-2 text-lg leading-8 text-gray-600">
               Schedule your consultation and find out how we can help you.
@@ -45,7 +45,7 @@ const Contact = () => {
         <form action="#" method="POST" className="px-6 pb-24 pt-4 sm:pb-32 lg:px-8 lg:py-24">
           <div className="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
             <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-              <div className='col-span-2'>
+              <div className='lg:col-span-2'>
                 <label
                   htmlFor="name"
                   className="block text-sm font-semibold leading-6 text-gray-900"
@@ -116,9 +116,9 @@ const Contact = () => {
             <div className="mt-8 flex justify-end">
               <button
                 type="submit"
-                className="rounded-md bg-gray-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900 w-full"
+                className="rounded-md bg-gray-900 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-gray-800 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gray-900"
               >
-                Contact Us
+                Send message
               </button>
             </div>
           </div>
