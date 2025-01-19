@@ -7,12 +7,14 @@ import { Link } from 'react-scroll';
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
+  const [isMobile, setIsMobile] = useState(false); // Tambahkan state untuk mendeteksi mobile
   
   const menuVariants = {
     open: { x: 0, opacity: 1, transition: { duration: 0.3, ease: 'easeInOut' } },
     closed: { x: '100%', opacity: 0, transition: { duration: 0.3, ease: 'easeInOut' } },
   };
 
+  // Handle fixed navbar on scroll
   useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY > 120) {
@@ -27,6 +29,25 @@ export default function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // Handle window resize to detect mobile view
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 1000); // Deteksi layar mobile (<= 1000px)
+    };
+
+    handleResize(); // Set state saat komponen pertama kali dimuat
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  // Fungsi untuk menentukan offset berdasarkan mode
+  const calculateOffset = (baseOffset) => {
+    return isMobile ? baseOffset - 35 : baseOffset; // Kurangi 20 jika di mobile
+  };
 
   return (
     <>
@@ -58,7 +79,7 @@ export default function Navbar() {
               to="contact"
               smooth={true}
               duration={500}
-              offset={-100}
+              offset={calculateOffset(-100)}
               className={`${
                 isFixed ? 'border border-white' : 'border border-gray-900'
               } hidden md:block font-semibold leading-6 bg-gray-900 text-white px-6 py-3 relative z-20 cursor-pointer`}
@@ -83,7 +104,7 @@ export default function Navbar() {
             to="contact"
             smooth={true}
             duration={500}
-            offset={-100}
+            offset={calculateOffset(-100)}
             className={`${
               isFixed ? 'border border-white bg-gray-900' : 'border border-gray-900 bg-gray-900'
             } block w-full text-center font-semibold leading-6 text-white px-4 py-2 cursor-pointer`}
@@ -132,7 +153,7 @@ export default function Navbar() {
                       to="home"
                       smooth={true}
                       duration={500}
-                      offset={-130}
+                      offset={calculateOffset(-130)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
@@ -142,7 +163,7 @@ export default function Navbar() {
                       to="about-us"
                       smooth={true}
                       duration={500}
-                      offset={-150}
+                      offset={calculateOffset(-150)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
@@ -152,7 +173,7 @@ export default function Navbar() {
                       to="services"
                       smooth={true}
                       duration={500}
-                      offset={-70}
+                      offset={calculateOffset(-100)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
@@ -162,7 +183,7 @@ export default function Navbar() {
                       to="contact"
                       smooth={true}
                       duration={500}
-                      offset={-90}
+                      offset={calculateOffset(-100)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
@@ -172,7 +193,7 @@ export default function Navbar() {
                       to="faqs"
                       smooth={true}
                       duration={500}
-                      offset={-90}
+                      offset={calculateOffset(-95)}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
