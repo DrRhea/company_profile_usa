@@ -1,5 +1,6 @@
-import { MessageCircle } from "lucide-react";
 import "./globals.css";
+import MessagePopover from "./components/MessagePopover";
+import MessageForm from "./components/MessageForm";
 
 export const metadata = {
   title: "CONSULTING SERVICES – Leading Consultancy Services for Modern Businesses",
@@ -57,9 +58,8 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <main>{children}</main>
-        <div className="fixed bottom-4 right-4 md:bottom-8 md:right-10 bg-gray-900 p-4 rounded-full text-white cursor-pointer shadow-gray-800 shadow-sm">
-          <MessageCircle />
-        </div>
+        <MessagePopover />
+        <MessageForm />
       </body>
     </html>
   );

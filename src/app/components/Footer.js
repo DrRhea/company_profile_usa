@@ -1,6 +1,7 @@
 'use client'  
   
 import { Mail, Phone, MapPin, Globe } from 'lucide-react'  
+import '../font-style.css'
   
 const Footer = () => {  
   return (  
