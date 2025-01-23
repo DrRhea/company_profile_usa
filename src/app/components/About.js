@@ -28,7 +28,7 @@ const About = () => {
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
               <h2 className="text-4xl text-gray-900 sm:col-span-2 w-2/3">
-                Here’s what to expect from our consultation process
+                Our Consultation Process: What to Expect
               </h2>
               {[
                 { title: "Initial Discovery call",
