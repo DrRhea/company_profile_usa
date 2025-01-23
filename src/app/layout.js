@@ -1,9 +1,9 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "AAHM Corporation – Leading Consultancy Services for Modern Businesses",
+  title: "CONSULTING SERVICES – Leading Consultancy Services for Modern Businesses",
   description:
-    "AAHM Corporation provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success.",
+    "CONSULTING SERVICES provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success.",
 };
 
 export default function RootLayout({ children }) {
@@ -12,16 +12,16 @@ export default function RootLayout({ children }) {
       <head>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="title" content="AAHM Corporation – Leading Consultancy Services for Modern Businesses" />
+        <meta name="title" content="CONSULTING SERVICES – Leading Consultancy Services for Modern Businesses" />
         <meta
           name="description"
-          content="AAHM Corporation provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success."
+          content="CONSULTING SERVICES provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success."
         />
         <meta
           name="keywords"
-          content="consultancy, business services, strategic planning, operational excellence, AAHM Corporation"
+          content="consultancy, business services, strategic planning, operational excellence, CONSULTING SERVICES"
         />
-        <meta name="author" content="AAHM Corporation" />
+        <meta name="author" content="CONSULTING SERVICES" />
         <meta name="robots" content="index, follow" />
 
         {/* Open Graph / Facebook */}
@@ -29,11 +29,11 @@ export default function RootLayout({ children }) {
         <meta property="og:url" content="https://www.aahmcorporation.com/" />
         <meta
           property="og:title"
-          content="AAHM Corporation – Leading Consultancy Services for Modern Businesses"
+          content="CONSULTING SERVICES – Leading Consultancy Services for Modern Businesses"
         />
         <meta
           property="og:description"
-          content="AAHM Corporation provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success."
+          content="CONSULTING SERVICES provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success."
         />
         <meta property="og:image" content="/images/logo.png" />
 
@@ -42,11 +42,11 @@ export default function RootLayout({ children }) {
         <meta name="twitter:url" content="https://www.aahmcorporation.com/" />
         <meta
           name="twitter:title"
-          content="AAHM Corporation – Leading Consultancy Services for Modern Businesses"
+          content="CONSULTING SERVICES – Leading Consultancy Services for Modern Businesses"
         />
         <meta
           name="twitter:description"
-          content="AAHM Corporation provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success."
+          content="CONSULTING SERVICES provides professional consultancy services for business growth, strategic planning, and operational excellence. Partner with us for success."
         />
         <meta name="twitter:image" content="/images/logo.png" />
 
