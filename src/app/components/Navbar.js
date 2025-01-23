@@ -167,7 +167,7 @@ export default function Navbar() {
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
-                      About Us
+                      About
                     </Link>
                     <Link
                       to="services"

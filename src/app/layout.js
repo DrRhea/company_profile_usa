@@ -57,7 +57,7 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <main>{children}</main>
-        <div className="fixed bottom-4 right-4 md:bottom-8 md:right-10 bg-indigo-500 p-4 rounded-full text-white cursor-pointer">
+        <div className="fixed bottom-4 right-4 md:bottom-8 md:right-10 bg-gray-900 p-4 rounded-full text-white cursor-pointer shadow-gray-800 shadow-sm">
           <MessageCircle />
         </div>
       </body>
