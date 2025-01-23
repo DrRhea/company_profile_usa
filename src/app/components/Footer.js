@@ -13,7 +13,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Name */}
           <div>
-            <h3 className="text-xl font-semibold mb-6 md:mb-0">AAHM Corporation</h3>
+            <h3 className="text-xl font-semibold mb-6 md:mb-0">AW Consulting</h3>
           </div>
 
           {/* Mobile View: Combined Labels and Info */}
@@ -27,7 +27,7 @@ const Footer = () => {
                 href="mailto:Awhmconsulting@gmail.com" 
                 className="block pl-8 hover:text-blue-600 transition-colors"
               >
-                Awhmconsulting@gmail.com
+                Awconsultingservice.com
               </a>
             </div>
 
@@ -50,12 +50,12 @@ const Footer = () => {
                 <p className="text-gray-600">Address</p>
               </div>
               <a 
-                href="https://aahmconsultations.com" 
+                href="https://awconsultingservice.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="block pl-8 hover:text-blue-600 transition-colors"
               >
-                Aahmconsultations.com
+                Awconsultingservice.com
               </a>
             </div>
           </div>
@@ -99,12 +99,12 @@ const Footer = () => {
 
             <div>
               <a 
-                href="https://aahmconsultations.com" 
+                href="https://awconsultingservice.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="hover:text-blue-600 transition-colors"
               >
-                Aahmconsultations.com
+                Awconsultingservice.com
               </a>
             </div>
           </div>

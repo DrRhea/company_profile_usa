@@ -63,7 +63,7 @@ export default function Navbar() {
               smooth={true}
               duration={500}
               className="-m-1.5 p-1.5 flex items-center gap-x-3">
-              <span className="sr-only">AAHM Corporation</span>
+              <span className="sr-only">CONSULTING SERVICES</span>
               <img src='/images/logo.png'
                 className={`${
                   isFixed ? 'bg-white p-1 rounded' : ''
@@ -71,7 +71,7 @@ export default function Navbar() {
               <span
                 className={`${
                   isFixed ? 'text-white' : ''
-                } text-lg`}>AAHM Corporation</span>
+                } text-lg`}>CONSULTING SERVICES</span>
             </Link>
           </div>
           <div className="flex items-center space-x-4">
@@ -207,9 +207,9 @@ export default function Navbar() {
                   <img 
                     src='/images/logo.png'
                     className="bg-white p-2 rounded h-24 w-auto" 
-                    alt="AAHM Corporation"
+                    alt="CONSULTING SERVICES"
                   />
-                  <span className="text-white mt-4 text-xl">AAHM Corporation</span>
+                  <span className="text-white mt-4 text-xl">AW Consulting Services</span>
                 </div>
               </div>
             </motion.div>

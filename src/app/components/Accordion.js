@@ -12,15 +12,15 @@ const Accordion = () => {
 
   const faqs = [
     {
-      question: "How can AAHM Consultations help my business grow?",
-      answer: "AAHM Consultations helps businesses grow by offering strategic insights and practical solutions in your dedicated area working closely with you to create actionable plans that align with your goals.",
+      question: "How can AW Consulting help my business grow?",
+      answer: "AW Consulting helps businesses grow by offering strategic insights and practical solutions in your dedicated area working closely with you to create actionable plans that align with your goals.",
     },
     {
-      question: "What makes AAHM Consultations different from other consulting firms?",
+      question: "What makes AW Consulting different from other consulting firms?",
       answer: "Our dedication to client success and 15 years of experience set us apart. We pride ourselves on offering personalized, actionable advice and a hands-on approach. Additionally, we provide ongoing support to ensure our strategies deliver consistent, measurable results for your business.",
     },
     {
-      question: "Does AAHM Consultations offer services for startups or small businesses?",
+      question: "Does AW Consulting offer services for startups or small businesses?",
       answer: "Yes, we understand the unique challenges startups and small businesses face. AAHM provides tailored solutions to help you build a strong foundation. Whether you’re just starting or ready to scale, we’re here to support you every step of the way.",
     },
     {
