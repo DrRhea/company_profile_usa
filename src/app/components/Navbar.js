@@ -190,6 +190,16 @@ export default function Navbar() {
                       Contact
                     </Link>
                     <Link
+                      to="resources"
+                      smooth={true}
+                      duration={500}
+                      offset={calculateOffset(-100)}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      Resources
+                    </Link>
+                    <Link
                       to="faqs"
                       smooth={true}
                       duration={500}

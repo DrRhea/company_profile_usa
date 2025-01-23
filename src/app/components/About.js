@@ -40,7 +40,7 @@ const About = () => {
                 { title: "Implementation & Guidance", 
                   address: ["Once the strategy is finalized, we’ll provide guidance on executing it seamlessly. Whether you need ongoing support, training, or advice, we’re here to ensure every step leads to measurable success."] },
               ].map((item, index) => (
-                <div key={index} className="rounded-2xl bg-gray-50 p-10">
+                <div key={index} className="rounded-2xl bg-gray-100 p-10">
                   <h3 className="text-base font-semibold leading-7 text-gray-900" style={{ fontFamily: 'Times New Roman' }}>{item.title}</h3>
                   <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
                     {item.address.map((line, idx) => (
@@ -71,8 +71,8 @@ const About = () => {
                 { title: "Sustainability Solutions", 
                   address: ["Providing tailored guidance to help businesses incorporate environmentally and socially responsible practices into their operations. This includes identifying opportunities to reduce environmental impact, improve resource efficiency, and align with evolving sustainability standards, all while supporting long-term business goals."] },
               ].map((item, index) => (
-                <div key={index} className="rounded-2xl bg-gray-50 p-10">
-                  <h3 className="text-base font-semibold leading-7 text-gray-900">{item.title}</h3>
+                <div key={index} className="rounded-2xl bg-gray-100 p-10">
+                  <h3 className="text-base font-semibold leading-7 text-gray-900" style={{ fontFamily: 'Times New Roman' }}>{item.title}</h3>
                   <address className="mt-3 space-y-1 text-sm not-italic leading-6 text-gray-600">
                     {item.address.map((line, idx) => (
                       <p key={idx} className="font-['arial']">{line}</p>
