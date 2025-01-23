@@ -7,7 +7,7 @@ const About = () => {
         <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3" id={'about-us'}>
             <div>
-              <h2 className="text-3xl tracking-tight text-gray-900">About Us</h2>
+              <h2 className="text-3xl tracking-tight text-gray-900 font-['arial']">About Us</h2>
             </div>
             <div className="flex flex-col gap-6 lg:gap-8 w-full lg:col-span-2">
               <p className="tracking-wider text-gray-600 font-['arial']">
