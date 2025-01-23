@@ -1,3 +1,4 @@
+import { MessageCircle } from "lucide-react";
 import "./globals.css";
 
 export const metadata = {
@@ -56,6 +57,9 @@ export default function RootLayout({ children }) {
       </head>
       <body>
         <main>{children}</main>
+        <div className="fixed bottom-4 right-4 md:bottom-8 md:right-10 bg-indigo-500 p-4 rounded-full text-white cursor-pointer">
+          <MessageCircle />
+        </div>
       </body>
     </html>
   );
