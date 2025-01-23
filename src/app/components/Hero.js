@@ -14,10 +14,10 @@ const Hero = () => {
         </div>
         <div className="mx-auto max-w-2xl">
           <div className="text-center bg-gray-900/80 px-6 py-12 rounded-lg">
-            <h1 className="text-3xl sm:text-6xl font-bold tracking-tight text-white">
+            <h1 className="text-3xl sm:text-6xl font-medium tracking-tight text-white">
               Consultancy Services
             </h1>
-            <p className="mt-6 text-base sm:text-xl font-bold text-gray-300">We turn insights into impact.</p>
+            <p className="mt-6 text-base sm:text-xl text-gray-300">We turn insights into impact.</p>
           </div>
         </div>
         <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
