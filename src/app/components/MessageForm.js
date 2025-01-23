@@ -82,7 +82,7 @@ export default function MessageForm() {
 
       {isFormVisible && (
         <div className="fixed inset-0 bg-gray-900 bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-white rounded-lg shadow-lg w-full max-w-md">
+          <div className="bg-white rounded-lg shadow-lg w-full max-w-md mx-4 ">
             {/* Header Section */}
             <div className="bg-gray-900 text-white rounded-t-lg p-4 flex items-center space-x-3 justify-between">
               <img
