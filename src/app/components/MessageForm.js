@@ -1,9 +1,10 @@
 'use client';
 
-import { MessageCircle, SendHorizontal, X } from "lucide-react";
+import { MessageCircle, Pointer, SendHorizontal, X } from "lucide-react";
 import React, { useState } from "react";
 
 const COUNTRY_CODES = [
+  { code: 'US', name: 'United States', dialCode: '+1', flag: '🇺🇸' },
   { code: 'AR', name: 'Argentina', dialCode: '+54', flag: '🇦🇷' },
   { code: 'AU', name: 'Australia', dialCode: '+61', flag: '🇦🇺' },
   { code: 'AT', name: 'Austria', dialCode: '+43', flag: '🇦🇹' },
@@ -62,7 +63,6 @@ const COUNTRY_CODES = [
   { code: 'UA', name: 'Ukraine', dialCode: '+380', flag: '🇺🇦' },
   { code: 'AE', name: 'United Arab Emirates', dialCode: '+971', flag: '🇦🇪' },
   { code: 'GB', name: 'United Kingdom', dialCode: '+44', flag: '🇬🇧' },
-  { code: 'US', name: 'United States', dialCode: '+1', flag: '🇺🇸' },
   { code: 'VN', name: 'Vietnam', dialCode: '+84', flag: '🇻🇳' }
 ];
 
@@ -74,10 +74,10 @@ export default function MessageForm() {
   return (
     <>
       <div
-        className="fixed bottom-4 right-4 md:bottom-8 md:right-10 bg-gray-900 p-4 rounded-full text-white cursor-pointer shadow-gray-800 shadow-sm flex items-center justify-center"
+        className="fixed bottom-4 right-4 md:bottom-8 md:right-10 bg-gray-900 p-4 rounded-full text-white cursor-pointer shadow-gray-800 shadow-sm flex items-center justify-center hover:scale-90 duration-150"
         onClick={() => setIsFormVisible(true)}
       >
-        <MessageCircle />
+        <Pointer />
       </div>
 
       {isFormVisible && (
@@ -85,11 +85,6 @@ export default function MessageForm() {
           <div className="bg-white rounded-lg shadow-lg w-full max-w-md mx-4 ">
             {/* Header Section */}
             <div className="bg-gray-900 text-white rounded-t-lg p-4 flex items-center space-x-3 justify-between">
-              <img
-                src="/images/smiley.jpg"
-                alt="User Avatar"
-                className="w-10 h-10 rounded-full"
-              />
               <h2 className="text-lg font-medium font-['arial']">Have a question?</h2>
               <button
                 onClick={() => setIsFormVisible(false)}
@@ -102,11 +97,6 @@ export default function MessageForm() {
             {/* Description Section */}
             <div className="p-4 border-b border-gray-200">
               <div className="flex items-start space-x-3">
-                <img
-                  src="/images/smiley.jpg"
-                  alt="User Avatar"
-                  className="w-8 h-8 rounded-full"
-                />
                 <p className="text-gray-700 text-sm font-['arial']">
                   Enter your question below and a representative will get right back to you.
                 </p>
@@ -162,7 +152,7 @@ export default function MessageForm() {
 
               {/* Terms and Submit Section */}
               <p className="text-xs text-gray-500 font-['arial']">
-                By submitting you agree to receive SMS or e-mails for the provided channel. Rates may be applied.
+                By submitting you agree to receive SMS from AW Consulting. Message & data rates may apply.
               </p>
               <button
                 type="submit"

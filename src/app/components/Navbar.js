@@ -68,10 +68,6 @@ export default function Navbar() {
                 className={`${
                   isFixed ? 'bg-white p-1 rounded' : ''
                 } h-12 w-auto`}/>
-              <span
-                className={`${
-                  isFixed ? 'text-white' : ''
-                } text-lg`}>CONSULTING SERVICES</span>
             </Link>
           </div>
           <div className="flex items-center space-x-4">
@@ -134,7 +130,14 @@ export default function Navbar() {
                 top: isFixed ? '0' : '0',
               }}
             >
-              <div className="flex justify-end">
+              <div className="flex justify-between items-center">
+                <div>
+                  <img 
+                    src='/images/logo.png'
+                    className="bg-white p-2 rounded h-12 w-auto" 
+                    alt="CONSULTING SERVICES"
+                  />
+                </div>
                 <button
                   type="button"
                   className="-m-2.5 rounded-md p-2.5 text-gray-400 hover:text-gray-300"
@@ -210,16 +213,6 @@ export default function Navbar() {
                       FAQs
                     </Link>
                   </div>
-                </div>
-                
-                {/* Bottom Logo */}
-                <div className="mt-8 flex flex-col items-center">
-                  <img 
-                    src='/images/logo.png'
-                    className="bg-white p-2 rounded h-24 w-auto" 
-                    alt="CONSULTING SERVICES"
-                  />
-                  <span className="text-white mt-4 text-xl">AW Consulting Services</span>
                 </div>
               </div>
             </motion.div>
