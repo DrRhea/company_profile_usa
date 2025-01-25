@@ -8,8 +8,7 @@ export default function TermsAndConditions() {
       <div className="container mx-auto px-4 py-8 mt-32 md:mt-24">
         <h1 className="text-3xl font-bold mb-6">Terms and Conditions of Use</h1>
         <p className="text-gray-600 mb-4">Updated: January 2025</p>
-          <section className="mt-12">  
-              <p className="text-gray-600 mb-4">Updated: January 2025</p>  
+          <section className="mt-8">  
               <p className="text-gray-600 mb-4">  
                 Welcome to AW (“we,” “us,” or “our”). By accessing or using our website at AWCONSULTINGSERVICE.COM (the “Site”), and the services we provide, you agree to be bound by these Terms and Conditions (“Terms”). Please read them carefully before using our services. If you do not agree to these Terms, you should not use our Site or services.  
               </p>  
