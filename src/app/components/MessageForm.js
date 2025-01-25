@@ -77,7 +77,7 @@ export default function MessageForm() {
         className="fixed bottom-4 right-4 md:bottom-8 md:right-10 bg-gray-900 p-4 rounded-full text-white cursor-pointer shadow-gray-800 shadow-sm flex items-center justify-center hover:scale-90 duration-150"
         onClick={() => setIsFormVisible(true)}
       >
-        <Pointer />
+        <MessageCircle />
       </div>
 
       {isFormVisible && (

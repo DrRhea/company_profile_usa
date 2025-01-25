@@ -134,7 +134,7 @@ export default function Navbar() {
                 <div>
                   <img 
                     src='/images/logo.png'
-                    className="bg-white p-2 rounded h-12 w-auto" 
+                    className="h-12 w-auto" 
                     alt="CONSULTING SERVICES"
                   />
                 </div>
@@ -157,7 +157,7 @@ export default function Navbar() {
                       smooth={true}
                       duration={500}
                       offset={calculateOffset(-130)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
                       Home
@@ -167,7 +167,7 @@ export default function Navbar() {
                       smooth={true}
                       duration={500}
                       offset={calculateOffset(-150)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
                       About
@@ -177,7 +177,7 @@ export default function Navbar() {
                       smooth={true}
                       duration={500}
                       offset={calculateOffset(-90)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
                       Services
@@ -187,7 +187,7 @@ export default function Navbar() {
                       smooth={true}
                       duration={500}
                       offset={calculateOffset(-100)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
                       Contact
@@ -197,7 +197,7 @@ export default function Navbar() {
                       smooth={true}
                       duration={500}
                       offset={calculateOffset(-100)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
                       Resources
@@ -207,7 +207,7 @@ export default function Navbar() {
                       smooth={true}
                       duration={500}
                       offset={calculateOffset(-95)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
                       onClick={() => setMenuOpen(false)}
                     >
                       FAQs
