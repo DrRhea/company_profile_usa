@@ -1,13 +1,14 @@
 'use client';
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
-import { Link } from 'react-scroll';
+import { useRouter, usePathname } from 'next/navigation';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [isFixed, setIsFixed] = useState(false);
-  const [isMobile, setIsMobile] = useState(false); // Tambahkan state untuk mendeteksi mobile
+  const [isMobile, setIsMobile] = useState(false);
+  const router = useRouter();
+  const pathname = usePathname();
   
   const menuVariants = {
     open: { x: 0, opacity: 1, transition: { duration: 0.3, ease: 'easeInOut' } },
@@ -33,10 +34,10 @@ export default function Navbar() {
   // Handle window resize to detect mobile view
   useEffect(() => {
     const handleResize = () => {
-      setIsMobile(window.innerWidth <= 1000); // Deteksi layar mobile (<= 1000px)
+      setIsMobile(window.innerWidth <= 1000);
     };
 
-    handleResize(); // Set state saat komponen pertama kali dimuat
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => {
@@ -46,7 +47,52 @@ export default function Navbar() {
 
   // Fungsi untuk menentukan offset berdasarkan mode
   const calculateOffset = (baseOffset) => {
-    return isMobile ? baseOffset - 35 : baseOffset; // Kurangi 20 jika di mobile
+    return isMobile ? baseOffset - 35 : baseOffset;
+  };
+
+  // Custom link handler
+  const handleLinkClick = (to) => {
+    // Close mobile menu
+    setMenuOpen(false);
+
+    // Function to scroll to section with offset
+    const scrollToSection = () => {
+      const element = document.getElementById(to);
+      if (element) {
+        // Retrieve specific offsets for each section
+        const offsets = {
+          'home': calculateOffset(-130),
+          'about-us': calculateOffset(-150),
+          'services': calculateOffset(-90),
+          'contact': calculateOffset(-100),
+          'resources': calculateOffset(-100),
+          'faqs': calculateOffset(-95)
+        };
+
+        const offset = offsets[to] || calculateOffset(-100);
+        
+        // Calculate scroll position with offset
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition + offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    // If on terms-and-conditions page, redirect to home first
+    if (pathname === '/terms-and-conditions') {
+      // Simple redirect without using .then()
+      router.push('/');
+      
+      // Wait a bit for page load before scrolling
+      setTimeout(scrollToSection, 300);
+    } else {
+      // If already on home page, scroll directly
+      scrollToSection();
+    }
   };
 
   return (
@@ -58,30 +104,29 @@ export default function Navbar() {
       >
         <nav className="flex items-center justify-between p-6 lg:px-8 max-w-7xl mx-auto" aria-label="Global">
           <div className="flex lg:flex-1">
-            <Link
-              to="home"
-              smooth={true}
-              duration={500}
-              className="-m-1.5 p-1.5 flex items-center gap-x-3">
+            <div
+              onClick={() => handleLinkClick('home')}
+              className="-m-1.5 p-1.5 flex items-center gap-x-3 cursor-pointer"
+            >
               <span className="sr-only">CONSULTING SERVICES</span>
-              <img src='/images/logo.png'
+              <img 
+                src='/images/logo.png'
                 className={`${
                   isFixed ? 'bg-white p-1 rounded' : ''
-                } h-12 w-auto`}/>
-            </Link>
+                } h-12 w-auto`}
+                alt="Logo"
+              />
+            </div>
           </div>
           <div className="flex items-center space-x-4">
-            <Link 
-              to="contact"
-              smooth={true}
-              duration={500}
-              offset={calculateOffset(-100)}
+            <div 
+              onClick={() => handleLinkClick('contact')}
               className={`${
                 isFixed ? 'border border-white' : 'border border-gray-900'
               } hidden md:block font-semibold leading-6 bg-gray-900 text-white px-6 py-3 relative z-20 cursor-pointer`}
             >
               Work With Us
-            </Link>
+            </div>
             <button
               type="button"
               className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-400"
@@ -96,17 +141,14 @@ export default function Navbar() {
         </nav>
 
         <div className="md:hidden">
-          <Link 
-            to="contact"
-            smooth={true}
-            duration={500}
-            offset={calculateOffset(-100)}
+          <div 
+            onClick={() => handleLinkClick('contact')}
             className={`${
               isFixed ? 'border border-white bg-gray-900' : 'border border-gray-900 bg-gray-900'
             } block w-full text-center font-semibold leading-6 text-white px-4 py-2 cursor-pointer`}
           >
             Work With Us
-          </Link>
+          </div>
         </div>
 
         {menuOpen && (
@@ -152,66 +194,22 @@ export default function Navbar() {
               <div className="mt-6 flow-root">
                 <div className="-my-6 divide-y divide-gray-500/25">
                   <div className="space-y-2 py-6">
-                    <Link
-                      to="home"
-                      smooth={true}
-                      duration={500}
-                      offset={calculateOffset(-130)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Home
-                    </Link>
-                    <Link
-                      to="about-us"
-                      smooth={true}
-                      duration={500}
-                      offset={calculateOffset(-150)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      About
-                    </Link>
-                    <Link
-                      to="services"
-                      smooth={true}
-                      duration={500}
-                      offset={calculateOffset(-90)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Services
-                    </Link>
-                    <Link
-                      to="contact"
-                      smooth={true}
-                      duration={500}
-                      offset={calculateOffset(-100)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Contact
-                    </Link>
-                    <Link
-                      to="resources"
-                      smooth={true}
-                      duration={500}
-                      offset={calculateOffset(-100)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      Resources
-                    </Link>
-                    <Link
-                      to="faqs"
-                      smooth={true}
-                      duration={500}
-                      offset={calculateOffset(-95)}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      FAQs
-                    </Link>
+                    {[
+                      { to: 'home', label: 'Home' },
+                      { to: 'about-us', label: 'About' },
+                      { to: 'services', label: 'Services' },
+                      { to: 'contact', label: 'Contact' },
+                      { to: 'resources', label: 'Resources' },
+                      { to: 'faqs', label: 'FAQs' }
+                    ].map((item) => (
+                      <div
+                        key={item.to}
+                        onClick={() => handleLinkClick(item.to)}
+                        className="-mx-3 block rounded-lg px-3 py-2 text-xl font-semibold leading-7 text-white hover:bg-gray-800 cursor-pointer"
+                      >
+                        {item.label}
+                      </div>
+                    ))}
                   </div>
                 </div>
               </div>
