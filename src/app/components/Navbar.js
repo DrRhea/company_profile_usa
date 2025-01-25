@@ -131,10 +131,10 @@ export default function Navbar() {
               }}
             >
               <div className="flex justify-between items-center">
-                <div>
+                <div className='mx-auto'>
                   <img 
                     src='/images/logo.png'
-                    className="h-12 w-auto" 
+                    className="h-16 w-auto" 
                     alt="CONSULTING SERVICES"
                   />
                 </div>
