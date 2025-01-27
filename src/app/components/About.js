@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-white py-16">
+    <div className="py-16">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto max-w-2xl space-y-16 divide-y divide-gray-100 lg:mx-0 lg:max-w-none">
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-3" id={'about-us'}>
@@ -87,8 +87,8 @@ const About = () => {
                   </address>
                 </div>
               ))}
-              <div className="flex justify-center">
-                <Link href="/services" className="text-sm font-semibold leading-6 text-white bg-gray-900 py-2 px-4">
+              <div className="justify-self-center sm:col-span-2 mt-4">
+                <Link href="/services" className="font-semibold leading-6 text-white bg-gray-900 py-3 px-6 col-span-2 text-center">
                   Find out more
                 </Link>
               </div>
