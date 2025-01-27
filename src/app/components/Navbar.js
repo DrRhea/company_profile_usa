@@ -83,7 +83,7 @@ export default function Navbar() {
     };
 
     // If on terms-and-conditions page, redirect to home first
-    if (pathname === '/terms-and-conditions') {
+    if (pathname !== '/') {
       // Simple redirect without using .then()
       router.push('/');
       
