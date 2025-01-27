@@ -176,7 +176,7 @@ export default function Navbar() {
                 <div className='mx-auto'>
                   <img 
                     src='/images/logo.png'
-                    className="h-16 w-auto" 
+                    className="h-20 w-auto" 
                     alt="CONSULTING SERVICES"
                   />
                 </div>
