@@ -24,15 +24,15 @@ const Contact = () => {
     e.preventDefault();
 
     // Replace with your EmailJS credentials
-    const serviceId = 'YOUR_EMAILJS_SERVICE_ID';
-    const templateId = 'YOUR_EMAILJS_TEMPLATE_ID';
-    const publicKey = 'YOUR_EMAILJS_PUBLIC_KEY';
+    const serviceId = 'service_2o5o1al';
+    const templateId = 'template_7n1odlg';
+    const publicKey = 'k0geX8asSkGYyPyd_';
 
     // Send email using EmailJS
     emailjs.send(serviceId, templateId, {
-      from_name: formData.name,
-      from_email: formData.email,
-      phone_number: formData.phoneNumber,
+      name: formData.name,
+      email: formData.email,
+      phoneNumber: formData.phoneNumber,
       message: formData.message
     }, publicKey)
     .then((response) => {

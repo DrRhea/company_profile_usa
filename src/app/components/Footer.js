@@ -15,12 +15,18 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">  
           <div>  
             <h3 className="text-xl font-semibold mb-6 md:mb-0">Quick Links</h3>
-            <div className="mt-4">
+            <div className="mt-4 flex flex-col space-y-2">
               <Link 
                 href="/terms-and-conditions" 
                 className="text-gray-600 hover:text-blue-600 transition-colors"
               >
                 Terms and Conditions
+              </Link>
+              <Link 
+                href="#contact" 
+                className="text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                Contact
               </Link>
             </div>
           </div> 
