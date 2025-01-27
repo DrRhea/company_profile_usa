@@ -88,7 +88,7 @@ const About = () => {
                 </div>
               ))}
               <div className="justify-self-center sm:col-span-2 mt-4">
-                <Link href="/services" className="font-semibold leading-6 text-white bg-gray-900 py-3 px-6 col-span-2 text-center">
+                <Link href="/services" className="font-semibold leading-6 text-white bg-gray-900 py-3 px-6 col-span-2 text-center rounded-md">
                   Find out more
                 </Link>
               </div>
