@@ -130,7 +130,7 @@ export default function TermsAndConditions() {
               <br />  
               AW Consulting Services  
               <br />  
-              [Your Address]  
+                1445 North Loop West, Houston, TX 77008
               <br />  
               <a href="mailto:info@Awconsultingservice.com" className="hover:text-blue-600 duration-150">info@Awconsultingservice.com</a>  
               <br />  
