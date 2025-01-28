@@ -71,7 +71,7 @@ const Footer = () => {
                 rel="noopener noreferrer"  
                 className="block pl-8 hover:text-blue-600 transition-colors"  
               >  
-                ...  
+                1445 North Loop West, Houston, TX 77008  
               </a>  
             </div>  
   
@@ -137,7 +137,7 @@ const Footer = () => {
               <span  
                 className="hover:text-blue-600 transition-colors"  
               >  
-                ...  
+                1445 North Loop West, Houston, TX 77008  
               </span>  
             </div>  
   
