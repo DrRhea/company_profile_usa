@@ -63,6 +63,12 @@ const Footer = () => {
               >
                 Contact
               </a>
+              <Link 
+                href="/disclosures" 
+                className="text-gray-600 hover:text-blue-600 transition-colors"
+              >
+                Disclosures
+              </Link>
             </div>
           </div> 
 
