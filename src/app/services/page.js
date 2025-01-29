@@ -20,7 +20,7 @@ const Services = () => {
                   </span>
                   
                   <span className="relative bg-gray-900 text-white px-8 py-3 text-base font-semibold leading-7 w-full sm:w-fit text-center">
-                    FIDUCIARY DUTY
+                    FIDUCIARY
                     <div className="absolute w-4 h-4 bg-gray-900 rotate-45 -bottom-2 left-1/2 transform -translate-x-1/2"></div>
                   </span>
                   
