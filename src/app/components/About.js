@@ -87,6 +87,11 @@ const About = () => {
                   </address>
                 </div>
               ))}
+                <div className="rounded-2xl bg-gray-100 p-10 flex space-x-4 sm:col-span-2 justify-center items-center">
+                  <h3 className="text-base font-semibold leading-7 border-4 border-gray-900 text-gray-900 py-2 px-4 hover:scale-105 duration-150">NO HIDDEN FEES</h3>
+                  <h3 className="text-base font-semibold leading-7 border-4 border-gray-900 text-gray-900 py-2 px-4 hover:scale-105 duration-150">FIDUCIARY DUTY</h3>
+                  <h3 className="text-base font-semibold leading-7 border-4 border-gray-900 text-gray-900 py-2 px-4 hover:scale-105 duration-150">FEE-ONLY MODEL</h3>
+                </div>
               <div className="justify-self-center sm:col-span-2 mt-4">
                 <Link href="/services" className="font-semibold leading-6 text-white bg-gray-900 py-3 px-6 col-span-2 text-center rounded-md">
                   Find out more
