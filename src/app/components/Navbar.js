@@ -55,6 +55,12 @@ export default function Navbar() {
     // Close mobile menu
     setMenuOpen(false);
 
+    // Khusus untuk services, langsung arahkan ke halaman services
+    if (to === 'services') {
+      router.push('/services');
+      return;
+    }
+
     // Function to scroll to section with offset
     const scrollToSection = () => {
       const element = document.getElementById(to);
@@ -63,7 +69,6 @@ export default function Navbar() {
         const offsets = {
           'home': calculateOffset(-130),
           'about-us': calculateOffset(-150),
-          'services': calculateOffset(-90),
           'contact': calculateOffset(-100),
           'resources': calculateOffset(-100),
           'faqs': calculateOffset(-95)
@@ -82,15 +87,11 @@ export default function Navbar() {
       }
     };
 
-    // If on terms-and-conditions page, redirect to home first
+    // If on different page, redirect to home first
     if (pathname !== '/') {
-      // Simple redirect without using .then()
       router.push('/');
-      
-      // Wait a bit for page load before scrolling
       setTimeout(scrollToSection, 300);
     } else {
-      // If already on home page, scroll directly
       scrollToSection();
     }
   };
