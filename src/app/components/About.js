@@ -11,7 +11,7 @@ const About = () => {
               <h2 className="text-sm uppercase tracking-widest text-gray-600 font-['arial']">About Us</h2>
             </div>
             <div className="flex flex-col gap-6 lg:gap-8 w-full lg:col-span-2">
-              <h2 className="text-4xl text-gray-900 sm:col-span-2 w-2/3">
+              <h2 className="text-4xl text-gray-900 sm:col-span-2 w-3/4 sm:w-2/3">
                 Who We Are: Redefining Success Together
               </h2>
               <p className="tracking-wider text-gray-600 font-['arial']">
@@ -31,7 +31,7 @@ const About = () => {
               <h2 className="text-sm uppercase tracking-widest text-gray-600 font-['arial']">process</h2>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-              <h2 className="text-4xl text-gray-900 sm:col-span-2 w-2/3">
+              <h2 className="text-4xl text-gray-900 sm:col-span-2 w-3/4 sm:w-2/3">
                 Our Consultation Process: What to Expect
               </h2>
               {[
@@ -61,7 +61,7 @@ const About = () => {
               <h2 className="text-sm uppercase tracking-widest text-gray-600 font-['arial']">our services</h2>
             </div>
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-              <h2 className="text-4xl text-gray-900 sm:col-span-2 w-2/3">
+              <h2 className="text-4xl text-gray-900 sm:col-span-2 w-3/4 sm:w-2/3">
                 What We Offer: Services Tailored to You
               </h2>
               {[
