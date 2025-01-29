@@ -18,7 +18,7 @@ const Hero = () => {
               Consultancy Services
             </h1>
             <p className="mt-6 text-base sm:text-xl text-gray-300">We turn insights into impact.</p>
-            <p className="mt-3 text-xs sm:text-sm text-gray-300 font-semibold">Established since 2012</p>
+            <p className="mt-3 text-xs sm:text-sm text-gray-300 font-semibold">Established in 2012</p>
           </div>
         </div>
         <div className="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
