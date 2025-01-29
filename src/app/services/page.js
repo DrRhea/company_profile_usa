@@ -13,6 +13,11 @@ const Services = () => {
                 <h2 className="text-sm uppercase tracking-widest text-gray-600 font-['arial']">our services</h2>
               </div>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
+              <div className="rounded-2xl flex-col sm:flex-row bg-gray-100 p-10 flex gap-4 sm:col-span-2 justify-center items-center">
+                  <h3 className="text-base font-semibold leading-7 border-4 border-gray-900 text-gray-900 py-2 px-4 hover:scale-105 duration-150 w-full text-center sm:w-fit ">NO HIDDEN FEES</h3>
+                  <h3 className="text-base font-semibold leading-7 border-4 border-gray-900 text-gray-900 py-2 px-4 hover:scale-105 duration-150 w-full text-center sm:w-fit">FIDUCIARY DUTY</h3>
+                  <h3 className="text-base font-semibold leading-7 border-4 border-gray-900 text-gray-900 py-2 px-4 hover:scale-105 duration-150 w-full text-center sm:w-fit">FEE-ONLY MODEL</h3>
+                </div>
                 {[
                   { title: "Business Strategy", 
                     address: ["Providing insights and recommendations to help businesses refine their goals, explore growth opportunities, and develop tailored strategies designed to enhance efficiency and competitive positioning."] },
