@@ -113,7 +113,7 @@ export default function Navbar() {
                 src='/images/logo.png'
                 className={`${
                   isFixed ? 'bg-white p-1 rounded' : ''
-                } h-12 md:h-16 w-auto`}
+                } h-12 md:h-16 lg:h-20 w-auto`}
                 alt="Logo"
               />
             </div>
