@@ -21,7 +21,7 @@ const Accordion = () => {
     },
     {
       question: "Does AW Consulting offer services for startups or small businesses?",
-      answer: "Yes, we understand the unique challenges startups and small businesses face. AW provides tailored solutions to help you build a strong foundation. Whether you’re just starting or ready to scale, we’re here to support you every step of the way.",
+      answer: "Yes, we understand the unique challenges startups and small businesses face. AW provides tailored solutions to help you build a strong foundation. Whether you are just starting or ready to scale, we are here to support you every step of the way.",
     },
     {
       question: "How are project budgets managed?",

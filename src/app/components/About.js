@@ -68,7 +68,7 @@ const About = () => {
                 { title: "Business Strategy", 
                   address: ["Providing insights and recommendations to help businesses refine their goals, explore growth opportunities, and develop tailored strategies designed to enhance efficiency and competitive positioning."] },
                 { title: "Marketing Strategy", 
-                  address: ["Developing customized marketing plans that align with clients’ brand goals and target audiences, with a focus on enhancing brand visibility and customer engagement."] },
+                  address: ["Developing customized marketing plans that align with clients brand goals and target audiences, with a focus on enhancing brand visibility and customer engagement."] },
                 { title: "Risk Advisory", 
                   address: ["Offering guidance to identify and assess potential risks, along with strategies that may help businesses navigate uncertainties and improve decision-making processes."] },
                 { title: "Real Estate Consulting", 
