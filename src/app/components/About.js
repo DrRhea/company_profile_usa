@@ -77,8 +77,6 @@ const About = () => {
                   address: ["Assisting clients in creating personalized financial approaches, including budgeting, cash flow management, and investment strategies, aimed at supporting long-term objectives."] },
                 { title: "Sustainability Solutions", 
                   address: ["Providing tailored guidance to help businesses incorporate environmentally and socially responsible practices into their operations. This includes identifying opportunities to reduce environmental impact, improve resource efficiency, and align with evolving sustainability standards, all while supporting long-term business goals."] },
-                { title: "Estate Planning", 
-                  address: ["Offering guidance on asset distribution to help ensure a smooth and efficient transfer of assets aligned with your financial goals."] },
               ].map((item, index) => (
                 <div key={index} className="rounded-2xl bg-gray-100 p-10">
                   <h3 className="text-base font-semibold leading-7 text-gray-900" style={{ fontFamily: 'Times New Roman' }}>{item.title}</h3>
