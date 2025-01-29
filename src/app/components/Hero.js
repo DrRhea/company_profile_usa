@@ -13,7 +13,7 @@ const Hero = () => {
           ></div>
         </div>
         <div className="mx-auto max-w-2xl">
-          <div className="text-center bg-gray-900/80 px-6 py-12 rounded-lg">
+          <div className="text-center bg-gray-900/80 px-6 py-5 rounded-lg">
             <h1 className="text-3xl sm:text-6xl font-medium tracking-tight text-white">
               Consultancy Services
             </h1>
