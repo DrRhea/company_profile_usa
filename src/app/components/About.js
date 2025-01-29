@@ -88,9 +88,20 @@ const About = () => {
                 </div>
               ))}
                 <div className="rounded-2xl flex-col sm:flex-row bg-gray-100 p-10 flex gap-4 sm:col-span-2 justify-center items-center">
-                  <h3 className="text-base font-semibold leading-7 border-4 border-gray-900 text-gray-900 py-2 px-4 hover:scale-105 duration-150 w-full text-center sm:w-fit ">NO HIDDEN FEES</h3>
-                  <h3 className="text-base font-semibold leading-7 border-4 border-gray-900 text-gray-900 py-2 px-4 hover:scale-105 duration-150 w-full text-center sm:w-fit">FIDUCIARY DUTY</h3>
-                  <h3 className="text-base font-semibold leading-7 border-4 border-gray-900 text-gray-900 py-2 px-4 hover:scale-105 duration-150 w-full text-center sm:w-fit">FEE-ONLY MODEL</h3>
+                  <span className="relative bg-gray-900 text-white px-8 py-3 text-base font-semibold leading-7 w-full sm:w-fit text-center">
+                    NO HIDDEN FEES
+                    <div className="absolute w-4 h-4 bg-gray-900 rotate-45 -bottom-2 left-1/2 transform -translate-x-1/2"></div>
+                  </span>
+                  
+                  <span className="relative bg-gray-900 text-white px-8 py-3 text-base font-semibold leading-7 w-full sm:w-fit text-center">
+                    FIDUCIARY DUTY
+                    <div className="absolute w-4 h-4 bg-gray-900 rotate-45 -bottom-2 left-1/2 transform -translate-x-1/2"></div>
+                  </span>
+                  
+                  <span className="relative bg-gray-900 text-white px-8 py-3 text-base font-semibold leading-7 w-full sm:w-fit text-center">
+                    FEE-ONLY MODEL
+                    <div className="absolute w-4 h-4 bg-gray-900 rotate-45 -bottom-2 left-1/2 transform -translate-x-1/2"></div>
+                  </span>
                 </div>
               <div className="justify-self-center sm:col-span-2 mt-4">
                 <Link href="/services" className="font-semibold leading-6 text-white bg-gray-900 py-3 px-6 col-span-2 text-center rounded-md">
