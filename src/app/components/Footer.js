@@ -3,8 +3,42 @@
 import { Mail, Phone, MapPin, Globe } from 'lucide-react'  
 import '../font-style.css'
 import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
   
 const Footer = () => {  
+  const router = useRouter();
+  const pathname = usePathname();
+
+  // Handle contact link click
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    
+    const scrollToContact = () => {
+      const element = document.getElementById('contact');
+      if (element) {
+        // Calculate offset based on viewport width
+        const offset = window.innerWidth <= 1000 ? -135 : -100;
+        
+        // Calculate scroll position with offset
+        const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
+        const offsetPosition = elementPosition + offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
+      }
+    };
+
+    // If on a different page, redirect to home first
+    if (pathname !== '/') {
+      router.push('/');
+      setTimeout(scrollToContact, 300);
+    } else {
+      scrollToContact();
+    }
+  };
+
   return (  
     <footer className="bg-gray-100 py-8 px-4 md:px-8">  
       <div className="max-w-7xl mx-auto">  
@@ -22,12 +56,13 @@ const Footer = () => {
               >
                 Terms and Conditions
               </Link>
-              <Link 
+              <a 
                 href="#contact" 
-                className="text-gray-600 hover:text-blue-600 transition-colors"
+                onClick={handleContactClick}
+                className="text-gray-600 hover:text-blue-600 transition-colors cursor-pointer"
               >
                 Contact
-              </Link>
+              </a>
             </div>
           </div> 
 

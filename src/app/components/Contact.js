@@ -24,9 +24,9 @@ const Contact = () => {
     e.preventDefault();
 
     // Replace with your EmailJS credentials
-    const serviceId = 'service_2o5o1al';
-    const templateId = 'template_7n1odlg';
-    const publicKey = 'k0geX8asSkGYyPyd_';
+    const serviceId = 'service_6fas0z3';
+    const templateId = 'template_9ay10ls';
+    const publicKey = '0CnncUta2LfVxAwru';
 
     // Send email using EmailJS
     emailjs.send(serviceId, templateId, {

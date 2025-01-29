@@ -13,9 +13,6 @@ const Services = () => {
                 <h2 className="text-sm uppercase tracking-widest text-gray-600 font-['arial']">our services</h2>
               </div>
               <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:col-span-2 lg:gap-8">
-                <h2 className="text-4xl text-gray-900 sm:col-span-2 w-2/3">
-                  What We Offer: Services Tailored to You
-                </h2>
                 {[
                   { title: "Business Strategy", 
                     address: ["Providing insights and recommendations to help businesses refine their goals, explore growth opportunities, and develop tailored strategies designed to enhance efficiency and competitive positioning."] },
