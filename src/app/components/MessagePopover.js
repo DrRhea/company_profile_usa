@@ -11,8 +11,8 @@ export default function MessagePopover() {
       <div className="fixed bottom-20 right-4 md:bottom-24 md:right-14 bg-white text-gray-900 p-4 rounded-lg shadow-lg flex items-center space-x-3">
         <MessageCircle />
         <div>
-          <p className="font-semibold font-['arial'] tracking-wide">Hi there, need assistance?</p>
-          <p className="font-['arial'] tracking-wider">
+          <p className="font-semibold font-['arial'] tracking-wide text-sm sm:text-base">Hi there, need assistance?</p>
+          <p className="font-['arial'] tracking-wider text-sm">
             Contact us here.
           </p>
         </div>
