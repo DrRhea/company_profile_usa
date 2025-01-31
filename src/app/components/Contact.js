@@ -24,7 +24,7 @@ const Contact = () => {
     e.preventDefault();
 
     // Replace with your EmailJS credentials
-    const serviceId = 'service_6fas0z3';
+    const serviceId = 'service_ioud27e';
     const templateId = 'template_9ay10ls';
     const publicKey = '0CnncUta2LfVxAwru';
 
