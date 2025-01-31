@@ -1,3 +1,4 @@
+import Copyright from "../components/Copyright";
 import Footer from "../components/Footer";  
 import Navbar from "../components/Navbar";  
   
@@ -140,6 +141,7 @@ export default function TermsAndConditions() {
         </section>  
       </div>  
       <Footer />  
+      <Copyright />
     </>  
   );  
 }  
