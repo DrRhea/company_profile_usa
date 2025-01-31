@@ -31,6 +31,7 @@ const Disclosures = () => {
       </div>
 
       <Footer />
+      <Copyright />
     </>
   )
 }
