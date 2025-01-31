@@ -2,6 +2,8 @@
 
 import { MessageCircle, Pointer, SendHorizontal, X } from "lucide-react";
 import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
+import Toast from './Toast'; 
 
 const COUNTRY_CODES = [
   { code: 'US', name: 'United States', dialCode: '+1', flag: '🇺🇸' },
@@ -70,6 +72,59 @@ export default function MessageForm() {
   const [isFormVisible, setIsFormVisible] = useState(false);
   const [selectedCountry, setSelectedCountry] = useState(COUNTRY_CODES[0]);
   const [isCountryDropdownOpen, setIsCountryDropdownOpen] = useState(false);
+  const [formData, setFormData] = useState({
+    name: '',
+    phoneNumber: '',
+    message: ''
+  });
+  const [toast, setToast] = useState(null);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prevState => ({
+      ...prevState,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    // Replace with your EmailJS credentials
+    const serviceId = 'service_ioud27e';
+    const templateId = 'template_s9ipl29';
+    const publicKey = '0CnncUta2LfVxAwru';
+
+    // Send email using EmailJS
+    emailjs.send(serviceId, templateId, {
+      name: formData.name,
+      phoneNumber: `${selectedCountry.dialCode} ${formData.phoneNumber}`,
+      message: formData.message
+    }, publicKey)
+    .then((response) => {
+      setToast({
+        type: 'success',
+        message: 'Thank you for your message. We will get back to you soon.'
+      });
+      // Reset form after submission
+      setFormData({
+        name: '',
+        phoneNumber: '',
+        message: ''
+      });
+      setIsFormVisible(false);
+    })
+    .catch((error) => {
+      setToast({
+        type: 'error', 
+        message: 'We apologize, but there was an error processing your submission. Please try again later.'
+      });
+    });
+  };
+
+  const handleCloseToast = () => {
+    setToast(null);
+  };
 
   return (
     <>
@@ -104,10 +159,13 @@ export default function MessageForm() {
             </div>
 
             {/* Form Section */}
-            <form className="p-4 space-y-4">
+            <form onSubmit={handleSubmit} className="p-4 space-y-4">
               <input
                 type="text"
+                name="name"
                 placeholder="Name"
+                value={formData.name}
+                onChange={handleChange}
                 className="w-full font-['arial'] p-2 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900"
               />
               
@@ -139,13 +197,19 @@ export default function MessageForm() {
                 )}
                 <input
                   type="tel"
+                  name="phoneNumber"
                   placeholder="Phone"
+                  value={formData.phoneNumber}
+                  onChange={handleChange}
                   className="w-full font-['arial'] p-2 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900"
                 />
               </div>
               
               <textarea
+                name="message"
                 placeholder="Message"
+                value={formData.message}
+                onChange={handleChange}
                 className="w-full font-['arial'] p-2 border rounded-md text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-900"
                 rows="4"
               ></textarea>
@@ -163,6 +227,14 @@ export default function MessageForm() {
             </form>
           </div>
         </div>
+      )}
+
+      {toast && (
+        <Toast 
+          type={toast.type} 
+          message={toast.message} 
+          onClose={handleCloseToast} 
+        />
       )}
     </>
   );
