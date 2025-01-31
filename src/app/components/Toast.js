@@ -16,9 +16,9 @@ const Toast = ({ type, message, onClose }) => {
   if (!isVisible) return null;
 
   const typeStyles = {
-    success: 'bg-green-500',
-    error: 'bg-red-500',
-    default: 'bg-blue-500'
+    success: 'bg-green-800',
+    error: 'bg-red-800',
+    default: 'bg-blue-800'
   };
 
   return (
