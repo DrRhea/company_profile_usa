@@ -126,7 +126,7 @@ export default function Navbar() {
                 isFixed ? 'border border-white' : 'border border-gray-900'
               } hidden md:block font-semibold leading-6 bg-gray-900 text-white px-6 py-3 relative z-20 cursor-pointer`}
             >
-              Get In Touch
+              Get in Touch
             </div>
             <button
               type="button"
@@ -148,7 +148,7 @@ export default function Navbar() {
               isFixed ? 'border border-white bg-gray-900' : 'border border-gray-900 bg-gray-900'
             } block w-full text-center font-semibold leading-6 text-white px-4 py-2 cursor-pointer`}
           >
-            Get In Touch
+            Get in Touch
           </div>
         </div>
 
