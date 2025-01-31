@@ -110,24 +110,9 @@ const Footer = () => {
                 href="https://awconsultingservice.com"   
                 target="_blank"   
                 rel="noopener noreferrer"  
-                className="block pl-8 hover:text-blue-600 transition-colors"  
+                className="block pl-8"  
               >  
                 1445 North Loop West, Houston, TX 77008  
-              </a>  
-            </div>  
-  
-            <div className="space-y-2">  
-              <div className="flex items-center space-x-3">  
-                <Globe className="w-5 h-5 text-gray-600" />  
-                <p className="text-gray-600">Website</p>  
-              </div>  
-              <a   
-                href="https://awconsultingservice.com"   
-                target="_blank"   
-                rel="noopener noreferrer"  
-                className="block pl-8 hover:text-blue-600 transition-colors"  
-              >  
-                Awconsultingservice.com  
               </a>  
             </div>  
           </div>  
@@ -147,11 +132,6 @@ const Footer = () => {
             <div className="flex items-center space-x-3">  
               <MapPin className="w-5 h-5 text-gray-600" />  
               <p className="text-gray-600">Address</p>  
-            </div>  
-  
-            <div className="flex items-center space-x-3">  
-              <Globe className="w-5 h-5 text-gray-600" />  
-              <p className="text-gray-600">Website</p>  
             </div>  
           </div>  
   
@@ -176,21 +156,10 @@ const Footer = () => {
   
             <div>  
               <span  
-                className="hover:text-blue-600 transition-colors"  
+                className=""  
               >  
                 1445 North Loop West, Houston, TX 77008  
               </span>  
-            </div>  
-  
-            <div>  
-              <a   
-                href="https://awconsultingservice.com"   
-                target="_blank"   
-                rel="noopener noreferrer"  
-                className="hover:text-blue-600 transition-colors"  
-              >  
-                Awconsultingservice.com  
-              </a>  
             </div>  
           </div>  
         </div>  
