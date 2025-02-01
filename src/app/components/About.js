@@ -15,13 +15,13 @@ const About = () => {
                 Who We Are: Redefining Success Together
               </h2>
               <p className="tracking-wider text-gray-600 font-['arial']">
-                We are a consultancy firm offering specialized expertise in business strategy, risk advisory, financial planning, marketing strategy, and real estate consulting. Our services are designed to support both businesses and individuals in navigating complex challenges and seizing opportunities
+                We are a consultancy firm offering specialized expertise in business strategy, risk advisory, financial planning, marketing strategy, estate planning and real estate consulting. Our services are designed to support both businesses and individuals in navigating complex challenges and seizing opportunities. 
               </p>
               <p className="tracking-wider text-gray-600 font-['arial']">
-                Our process begins with a comprehensive understanding of each client’s objectives and challenges, followed by the development of a strategic framework that addresses their specific needs. We provide in-depth analysis, offer actionable insights, and collaborate to refine and enhance our approach. Throughout the execution phase, we work closely with our clients to ensure seamless integration of strategies.
+                Our process begins with a comprehensive understanding of each client’s objectives and challenges, followed by the development of a strategic framework tailored to their specific needs. We provide in-depth analysis, offer actionable insights, and collaborate to refine and enhance our approach. Throughout the execution phase, we work closely with our clients to ensure seamless integration of strategies.
               </p>
               <p className="tracking-wider text-gray-600 font-['arial']">
-                Focused on delivering sophisticated, high-level solutions, we strive to equip our clients with the tools to make informed decisions and achieve sustained growth.
+                Focused on delivering sophisticated, high-level solutions, we equip our clients with the tools to make informed decisions and achieve sustained growth. What sets us apart is our commitment to a personalized approach. We don’t believe in a one-size-fits-all solution, ensuring that every strategy is customized to fit the unique needs of each client. Our transparent, results-driven process keeps you informed while adapting to evolving needs. We understand that strategic planning is an ongoing process, not a one-time fix. With expertise that adapts to changing markets and financial considerations, we provide the guidance and perspective necessary for well-informed decision making.
               </p>
             </div>
           </div>
