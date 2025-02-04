@@ -39,7 +39,7 @@ const About = () => {
                 { title: "Feedback & Revisions", 
                   address: ["Collaboration is key. We will present our proposed strategy, gather your input, and refine the plan to ensure it aligns with your vision. Your feedback ensures the final approach is practical, effective, and perfectly suited to your needs."] },
                 { title: "Implementation & Guidance", 
-                  address: ["Once the strategy is finalized, we will provide guidance on executing it seamlessly. Whether you need ongoing support, training, or advice, we’re here to ensure every step leads to measurable success."] },
+                  address: ["Once the strategy is finalized, we will provide guidance on executing it seamlessly. Whether you need ongoing support, training, or advice, we are here to ensure every step leads to measurable success."] },
               ].map((item, index) => (
                 <div key={index} className="rounded-2xl bg-gray-100 p-10">
                   <h3 className="text-base font-semibold leading-7 text-gray-900" style={{ fontFamily: 'Times New Roman' }}>{item.title}</h3>
