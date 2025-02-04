@@ -33,13 +33,13 @@ const About = () => {
               </h2>
               {[
                 { title: "Initial Discovery call",
-                  address: ["This is where we get to know you and your needs. We’ll discuss your goals, current challenges, and long-term vision, so we can fully understand your objectives. This step sets the foundation for everything we build together."] },
+                  address: ["This is where we get to know you and your needs. We will discuss your goals, current challenges, and long-term vision, so we can fully understand your objectives. This step sets the foundation for everything we build together."] },
                 { title: "Customized Strategy Development", 
-                  address: ["Based on the insights from our discovery call, we’ll craft a tailored strategy designed to address your specific challenges and opportunities. Whether it’s business growth, risk management, or financial planning, this is where we build a clear roadmap to success."] },
+                  address: ["Based on the insights from our discovery call, we will craft a tailored strategy designed to address your specific challenges and opportunities. Whether it’s business growth, risk management, or financial planning, this is where we build a clear roadmap to success."] },
                 { title: "Feedback & Revisions", 
-                  address: ["Collaboration is key. We’ll present our proposed strategy, gather your input, and refine the plan to ensure it aligns with your vision. Your feedback ensures the final approach is practical, effective, and perfectly suited to your needs."] },
+                  address: ["Collaboration is key. We will present our proposed strategy, gather your input, and refine the plan to ensure it aligns with your vision. Your feedback ensures the final approach is practical, effective, and perfectly suited to your needs."] },
                 { title: "Implementation & Guidance", 
-                  address: ["Once the strategy is finalized, we’ll provide guidance on executing it seamlessly. Whether you need ongoing support, training, or advice, we’re here to ensure every step leads to measurable success."] },
+                  address: ["Once the strategy is finalized, we will provide guidance on executing it seamlessly. Whether you need ongoing support, training, or advice, we’re here to ensure every step leads to measurable success."] },
               ].map((item, index) => (
                 <div key={index} className="rounded-2xl bg-gray-100 p-10">
                   <h3 className="text-base font-semibold leading-7 text-gray-900" style={{ fontFamily: 'Times New Roman' }}>{item.title}</h3>
