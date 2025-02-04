@@ -12,7 +12,7 @@ const Disclosures = () => {
         <section className="space-y-8">
           <div>
             <p className="text-gray-700 mb-4">  
-            Visitors to the AW Consulting website acknowledge that different investments involve varying degrees of risk. No client or prospective client should assume that any information presented and/or made available on this website serves as the receipt of, or substitutes for, personalized advice from AW Consulting or any other professional cited on this website.
+            Visitors to the AW Consulting website acknowledge that different investments involve varying degrees of risk. No client or prospective client should assume that any information presented and/or made available on this website serves as the receipt of, or substitutes for, personalized guidance from AW Consulting or any other professional cited on this website.
             </p>  
           </div>  
 
