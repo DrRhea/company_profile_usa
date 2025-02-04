@@ -35,7 +35,7 @@ const About = () => {
                 { title: "Initial Discovery call",
                   address: ["This is where we get to know you and your needs. We will discuss your goals, current challenges, and long-term vision, so we can fully understand your objectives. This step sets the foundation for everything we build together."] },
                 { title: "Customized Strategy Development", 
-                  address: ["Based on the insights from our discovery call, we will craft a tailored strategy designed to address your specific challenges and opportunities. Whether it’s business growth, risk management, or financial planning, this is where we build a clear roadmap to success."] },
+                  address: ["Based on the insights from our discovery call, we will craft a tailored strategy designed to address your specific challenges and opportunities. Whether it is business growth, risk management, or financial planning, this is where we build a clear roadmap to success."] },
                 { title: "Feedback & Revisions", 
                   address: ["Collaboration is key. We will present our proposed strategy, gather your input, and refine the plan to ensure it aligns with your vision. Your feedback ensures the final approach is practical, effective, and perfectly suited to your needs."] },
                 { title: "Implementation & Guidance", 
